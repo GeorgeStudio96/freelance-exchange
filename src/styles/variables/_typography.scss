@@ -1,2 +1,6 @@
-$font-size-base: 160px;
-$font-size-16: 16px;
+@import "./utils/functions";
+
+$font-size-body: px-to-rem(18);
+$font-size-16: px-to-rem(16);
+
+$h1: px-to-rem(48);

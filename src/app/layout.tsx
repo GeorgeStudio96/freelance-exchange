@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Header from "./components/Navigation/Header";
+import Header from "@/components/Navigation/Header";
 import "@/styles/global.scss";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,7 +19,9 @@ export default function RootLayout({
     <html lang="en" className={inter.className}>
       <body>
         <Header />
-        <main>{children}</main>
+        <div className="global-padding">
+          <main>{children}</main>
+        </div>
       </body>
     </html>
   );

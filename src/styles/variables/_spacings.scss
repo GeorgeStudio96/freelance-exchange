@@ -1,1 +1,29 @@
-$padding-small: 8px;
+@import "./utils/functions";
+
+$spacing-4: px-to-rem(4);
+$spacing-6: px-to-rem(6);
+$spacing-8: px-to-rem(8);
+$spacing-10: px-to-rem(10);
+$spacing-12: px-to-rem(12);
+$spacing-14: px-to-rem(14);
+$spacing-16: px-to-rem(16);
+$spacing-20: px-to-rem(20);
+$spacing-24: px-to-rem(24);
+$spacing-28: px-to-rem(28);
+$spacing-32: px-to-rem(32);
+$spacing-36: px-to-rem(36);
+$spacing-40: px-to-rem(40);
+$spacing-44: px-to-rem(44);
+$spacing-48: px-to-rem(48);
+$spacing-52: px-to-rem(52);
+$spacing-56: px-to-rem(56);
+$spacing-60: px-to-rem(60);
+$spacing-68: px-to-rem(68);
+$spacing-76: px-to-rem(76);
+$spacing-84: px-to-rem(84);
+$spacing-92: px-to-rem(92);
+$spacing-100: px-to-rem(100);
+
+
+// global padding
+$global-padding: px-to-rem(80)

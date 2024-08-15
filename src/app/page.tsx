@@ -1,12 +1,18 @@
 import Link from "next/link";
-import Button from "@/components/Button";
+import ListProject from "./components/UI/List";
 
+// hero page
 export default function Page() {
   return (
     <>
-      <Button />
-      <div className="size-16">Hello Sass</div>
-      <Link href="/dashboard">Go to Dashboard</Link>
+      <section>
+        <div className="main-container">
+          <div className="row row-60">
+            <h1>Список проектов подгружаемые с MongoDB</h1>
+            <ListProject />
+          </div>
+        </div>
+      </section>
     </>
   );
 }

@@ -1,12 +1,132 @@
 @import "./variables";
+@import "./base";
 
 body {
-    color: $color-primary;
-    font-size: $font-size-base;
-    margin: 0;
-    padding: 0;
-  }
-
+  background-color: $color-white;
+  font-size: $font-size-body;
+  font-size: $font-size-body;
+}
 .size-16 {
-    font-size: $font-size-16;
-}  
+  font-size: $font-size-16;
+}
+
+/*  
+Row — горизонтальная ось
+Collumn — вертикальная ось
+Reverse - меняет направление
+*/
+
+// Global Classes
+.global-padding {
+  padding-right: $global-padding;
+  padding-left: $global-padding;
+}
+
+.header {
+  background-color: $color-white;
+  padding: $spacing-12 $global-padding;
+  border-bottom: 1px solid $color-black;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.header-link {
+  padding: $spacing-24;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  column-gap: $spacing-40;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  column-gap: $spacing-40;
+}
+
+nav {
+  align-items: center;
+}
+
+section {
+  padding-top: $spacing-60;
+  padding-bottom: $spacing-60;
+}
+
+// All Row and Col
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.col {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-4 {
+  row-gap: $spacing-4;
+}
+
+.col-40 {
+  column-gap: $spacing-40;
+}
+
+.row-40 {
+  row-gap: $spacing-40;
+}
+
+.row-60 {
+  row-gap: $spacing-60;
+}
+
+// All Flex Directions
+
+// All Paddings
+
+// Main
+
+// All Buttons
+.btn {
+  border-radius: $spacing-10;
+  background-color: $color-black;
+  color: $color-white;
+}
+
+.btn-16--32 {
+  padding: $spacing-16 $spacing-32;
+}
+
+.btn-8--16 {
+  padding: $spacing-8 $spacing-16;
+}
+
+// Typography
+
+h1 {
+  font-size: $h1;
+}
+
+// Grid
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $spacing-40 $spacing-20;
+}
+
+// List Card
+
+.list-card {
+  border-radius: $spacing-10;
+  background-color: $color-light--grey;
+  padding: $spacing-40 $spacing-24;
+}
