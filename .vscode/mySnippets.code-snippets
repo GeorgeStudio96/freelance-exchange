@@ -1,0 +1,9 @@
+{
+	"Export Default": {
+	  "prefix": "exp",
+	  "body": [
+		"export default ${1:function ComponentName()}"
+	  ],
+	  "description": "Export default statement"
+	}
+  }
