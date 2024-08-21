@@ -1,5 +1,4 @@
-import Link from "next/link";
-import ListProject from "./components/UI/List";
+import ListProject from "./components/UI/ListProject";
 
 // hero page
 export default function Page() {

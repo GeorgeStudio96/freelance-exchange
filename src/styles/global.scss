@@ -17,6 +17,18 @@ Reverse - меняет направление
 */
 
 // Global Classes
+
+.col-space--between {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .global-padding {
   padding-right: $global-padding;
   padding-left: $global-padding;
@@ -88,6 +100,10 @@ section {
   row-gap: $spacing-60;
 }
 
+.row-20 {
+  row-gap: $spacing-20;
+}
+
 // All Flex Directions
 
 // All Paddings
@@ -95,6 +111,11 @@ section {
 // Main
 
 // All Buttons
+button {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
 .btn {
   border-radius: $spacing-10;
   background-color: $color-black;
@@ -107,6 +128,17 @@ section {
 
 .btn-8--16 {
   padding: $spacing-8 $spacing-16;
+}
+
+.like-btn {
+  background-color: $color-black;
+  color: $color-white;
+  min-height: 60px;
+  min-width: 150px;
+
+  &:hover {
+    background-color: $color-hover;
+  }
 }
 
 // Typography
@@ -129,4 +161,31 @@ h1 {
   border-radius: $spacing-10;
   background-color: $color-light--grey;
   padding: $spacing-40 $spacing-24;
+}
+.list-card:hover .project-poster {
+  scale: 1.1;
+}
+
+// Containers
+
+.container-300 {
+  width: $container-300;
+}
+
+// Images
+
+.full-img {
+  width: 100%;
+}
+
+.project-poster {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.poster-wrapper {
+  border-radius: $spacing-10;
+  height: $container-300;
 }

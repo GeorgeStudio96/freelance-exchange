@@ -14,3 +14,14 @@ export interface ButtonLinkSetting {
   link: string;
   textLink: string;
 }
+
+export interface Project {
+  key: number;
+  author: string;
+  cost: number;
+  projectDescription: string;
+  projectPoster: string;
+  linkToPage: string;
+  projectId?: number;
+  slug: string;
+}

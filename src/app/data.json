@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "key": 0,
+      "author": "George",
+      "cost": 3000,
+      "projectDescription": "some description",
+      "projectPoster": "https://plus.unsplash.com/premium_photo-1669842336826-28b52708792a?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "linkToPage": "link",
+      "slug": "project-name-1"
+    },
+    {
+      "key": 1,
+      "author": "George2",
+      "cost": 5000,
+      "projectDescription": "some description 2",
+      "projectPoster": "https://images.unsplash.com/photo-1712510795837-683b93b2b95e?q=80&w=2980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "linkToPage": "link",
+      "slug": "project-name-2"
+    }
+  ]
+}
