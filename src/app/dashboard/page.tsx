@@ -1,9 +1,10 @@
 "use server";
 
 import Link from "next/link";
-import Counter from "../components/Counter";
+import Counter from "@/utils/Counter";
 import { Suspense } from "react";
 import Loading from "./Loading";
+import { Metadata } from "next";
 
 export default async function HomePage() {
   // async function handleClick() {
