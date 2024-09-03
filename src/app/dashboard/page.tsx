@@ -14,6 +14,7 @@ export default async function HomePage() {
         <h1>This Dashboard page</h1>
         <Link href="/dashboard-info">go to info</Link>
         {/* <Button linkBtn={handleClick}/> */}
+        {/* some comment */}
         <Counter counterText="отображаем каунтер" />
         <Counter counterText="отображаем каунтер2" />
       </>
