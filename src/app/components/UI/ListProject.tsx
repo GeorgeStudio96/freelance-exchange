@@ -1,6 +1,6 @@
 import ListCard from "./ListCard";
 import dataJson from "../../data.json";
-import { Project } from "@/utils/utils";
+import { Project } from "src/app/utils/utils";
 
 export default function ListProject() {
   return (

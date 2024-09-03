@@ -1,4 +1,4 @@
-import { Project } from "@/utils/utils";
+import { Project } from "src/app/utils/utils";
 import Link from "next/link";
 import LikeButton from "./LikeButton";
 
