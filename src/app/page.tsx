@@ -1,4 +1,4 @@
-import ListProject from "./components/UI/ListProject";
+import SearchModule from "./components/Search Module/SearchModule";
 
 // hero page
 export default function Page() {
@@ -8,7 +8,7 @@ export default function Page() {
         <div className="main-container">
           <div className="row row-60">
             <h1>Список проектов подгружаемые с MongoDB</h1>
-            <ListProject />
+            <SearchModule />
           </div>
         </div>
       </section>

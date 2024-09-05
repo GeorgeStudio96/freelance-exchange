@@ -189,3 +189,12 @@ h1 {
   border-radius: $spacing-10;
   height: $container-300;
 }
+
+// All inputs
+
+input {
+  padding: $spacing-10 $spacing-20;
+  border-style: 1px solid $color-black;
+  border-radius: $spacing-10;
+  width: auto;
+}

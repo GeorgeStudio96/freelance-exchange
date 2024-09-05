@@ -24,12 +24,6 @@
       "@/utils/*": ["src/app/utils/*"]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    "src/app/typescript.js"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/typescript.js"],
   "exclude": ["node_modules"]
 }

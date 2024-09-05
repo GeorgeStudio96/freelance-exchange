@@ -1,11 +1,14 @@
 import ListCard from "./ListCard";
-import dataJson from "../../data.json";
 import { Project } from "src/app/utils/utils";
 
-export default function ListProject() {
+interface ListProjectProps {
+  projects: Project[];
+}
+
+export default function ListProject({ projects = [] }: ListProjectProps) {
   return (
     <div className="grid-3">
-      {dataJson.data.map((item: Project) => (
+      {projects.map((item: Project) => (
         <ListCard
           key={item.key}
           projectId={item.key}
