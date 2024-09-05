@@ -1,12 +1,200 @@
 @import "./variables";
+@import "./base";
 
 body {
-    color: $color-primary;
-    font-size: $font-size-base;
-    margin: 0;
-    padding: 0;
-  }
-
+  background-color: $color-bg-primary;
+  font-size: $font-size-body;
+  font-size: $font-size-body;
+}
 .size-16 {
-    font-size: $font-size-16;
-}  
+  font-size: $font-size-16;
+}
+
+/*  
+Row — горизонтальная ось
+Collumn — вертикальная ось
+Reverse - меняет направление
+*/
+
+// Global Classes
+
+.col-space--between {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.global-padding {
+  padding-right: $global-padding;
+  padding-left: $global-padding;
+}
+
+.header {
+  background-color: $color-white;
+  padding: $spacing-12 $global-padding;
+  border-bottom: 1px solid $color-black;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.header-link {
+  padding: $spacing-24;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  column-gap: $spacing-40;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  column-gap: $spacing-40;
+}
+
+nav {
+  align-items: center;
+}
+
+section {
+  padding-top: $spacing-60;
+  padding-bottom: $spacing-60;
+}
+
+// All Row and Col
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.col {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-4 {
+  row-gap: $spacing-4;
+}
+
+.col-40 {
+  column-gap: $spacing-40;
+}
+
+.row-40 {
+  row-gap: $spacing-40;
+}
+
+.row-60 {
+  row-gap: $spacing-60;
+}
+
+.row-20 {
+  row-gap: $spacing-20;
+}
+
+// All Flex Directions
+
+// All Paddings
+
+// Main
+
+// All Buttons
+button {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn {
+  border-radius: $spacing-10;
+  background-color: $color-black;
+  color: $color-white;
+}
+
+.btn-16--32 {
+  padding: $spacing-16 $spacing-32;
+}
+
+.btn-8--16 {
+  padding: $spacing-8 $spacing-16;
+}
+
+.like-btn {
+  background-color: $color-black;
+  color: $color-white;
+  min-height: 60px;
+  min-width: 150px;
+
+  &:hover {
+    background-color: $color-hover;
+  }
+}
+
+// Typography
+
+h1 {
+  font-size: $h1;
+}
+
+// Grid
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $spacing-40 $spacing-20;
+}
+
+// List Card
+
+.list-card {
+  border-radius: $spacing-10;
+  background-color: $color-light--grey;
+  padding: $spacing-40 $spacing-24;
+}
+.list-card:hover .project-poster {
+  scale: 1.1;
+}
+
+// Containers
+
+.container-300 {
+  width: $container-300;
+}
+
+// Images
+
+.full-img {
+  width: 100%;
+}
+
+.project-poster {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.poster-wrapper {
+  border-radius: $spacing-10;
+  height: $container-300;
+}
+
+// All inputs
+
+input {
+  padding: $spacing-10 $spacing-20;
+  border-style: 1px solid $color-black;
+  border-radius: $spacing-10;
+  width: auto;
+}
